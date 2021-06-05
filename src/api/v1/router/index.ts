@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import express from "express";
 import getProducts from "../controller/productController";
-import getUsers from "../controller/userController";
 import userRoute from "./userRoute";
+import productRoute from "./productRoute";
 
 var router = express.Router();
 
@@ -14,9 +14,11 @@ router.get("/", (req: Request, res: Response) => {
   });
 });
 
-router.get("/product", getProducts);
-// router.get("/user", getUsers);
+function activateRoutes() {
+  userRoute(router);
+  productRoute(router);
+}
 
-const activateRouter = userRoute;
+activateRoutes();
 
 export default router;
