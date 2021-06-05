@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import express from "express";
 import getProducts from "../controller/productController";
 import getUsers from "../controller/userController";
+import userRoute from "./userRoute";
 
 var router = express.Router();
 
@@ -14,6 +15,8 @@ router.get("/", (req: Request, res: Response) => {
 });
 
 router.get("/product", getProducts);
-router.get("/user", getUsers);
+// router.get("/user", getUsers);
+
+const activateRouter = userRoute;
 
 export default router;
