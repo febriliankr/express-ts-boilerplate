@@ -12,3 +12,7 @@ Available routes:
 - /api
 - /api/user
 - /api/product
+
+## Demo
+
+https://ets-boilerplate-febriliankr.herokuapp.com/
