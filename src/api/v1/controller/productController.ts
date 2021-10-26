@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Product } from "../interace";
+import { Product } from "../interface";
 
 function getProducts(req: Request, res: Response) {
 

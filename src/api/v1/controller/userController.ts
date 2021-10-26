@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { User } from "../interace";
+import { User } from "../interface";
 
 function getUsers(req: Request, res: Response) {
   const users: User[] = [
