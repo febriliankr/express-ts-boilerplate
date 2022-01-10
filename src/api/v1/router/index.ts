@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import express from "express";
-import getProducts from "../controller/productController";
 import userRoute from "./userRoute";
 import productRoute from "./productRoute";
 
