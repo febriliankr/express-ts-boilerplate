@@ -11,7 +11,6 @@ import { clientUrl } from "../config/client";
 
 function getGoogleAuthUrl(req: Request, res: Response) {
   const url = urlGoogle();
-
   res.status(200);
   res.redirect(url);
 }
